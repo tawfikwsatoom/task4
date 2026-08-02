@@ -1,0 +1,14 @@
+class Student {
+  String name;
+  String grade;
+
+  Student(this.name, [this.grade = "Not Graded"]);
+}
+
+void main() {
+  Student s1 = Student("Ali", "A");
+  Student s2 = Student("Sara");
+
+  print("${s1.name} - ${s1.grade}");
+  print("${s2.name} - ${s2.grade}");
+}
