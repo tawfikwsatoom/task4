@@ -1,0 +1,18 @@
+class Person {
+  String name;
+  int age;
+
+  Person(this.name, this.age);
+}
+
+void main() {
+  List<Person> people = [
+    Person("Ali", 20),
+    Person("Sara", 22),
+    Person("Omar", 19),
+  ];
+
+  for (Person person in people) {
+    print("${person.name} - ${person.age}");
+  }
+}
